@@ -1,0 +1,25 @@
+
+public class Main
+{
+
+ static int sum(int no1,int no2){
+     
+		int c=no1+no2;
+		return c;
+		    
+}
+ static	int sub(int no3,int no4){
+     
+		int d=no3-no4;
+		return d;
+		    
+}
+public static void main (String[] args) {
+    int a=20,b=30;
+    int s=sum(a,b);
+    int t=sub(a,b);
+    
+    System.out.println(s);
+    System.out.println(t);
+}
+}
