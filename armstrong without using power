@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Main
+{
+
+ static	int power(int no,int digit){
+		
+		    int pow=1;
+		    for(int i=1;i<=digit;i++)
+		    
+		        pow=pow*no;
+		    
+		
+		return pow;
+	}
+	
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner (System.in);
+		System.out.println("Enter a no :");
+		int n=sc.nextInt();
+	    int a=n;
+	    int b=n;
+	    int arm=0;
+		int count=0;
+		while(n>0)
+		{
+		    n=n/10;
+		    count++;
+		}
+		while(a>0)
+		{
+		    int rem=a%10;
+		    arm=arm+(power(rem,count));
+		    a=a/10;
+		}
+		if(arm==b)
+		{
+		    System.out.println("armstrong");
+		}
+		else
+		{
+		    System.out.println("not armstrong");
+		}
+	    
+}
+}
+
