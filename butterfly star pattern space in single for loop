@@ -1,0 +1,30 @@
+public class Main
+{
+	public static void main(String[] args) {
+	 for(int i=1;i<=10;i++){
+	     for(int j=1;j<=i;j++){
+	         System.out.print("*");
+	     }
+	     for(int k=10*2;k>i*2;k--){
+	         System.out.print(" ");
+	     } 
+	     for(int l=1;l<=i;l++){
+	         System.out.print("*");
+	     }
+	     System.out.println();
+	 }
+	 for(int x=1;x<=10;x++){
+	     for(int y=10;y>=x;y--){
+	         System.out.print("*");
+	     }
+	     for(int z=2;z<x*2;z++){
+	         System.out.print(" ");
+	     }
+	     for(int a=10;a>=x;a--){
+	         System.out.print("*");
+	     }
+	        System.out.println();
+	     
+	 }
+	}
+}
